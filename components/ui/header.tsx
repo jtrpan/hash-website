@@ -32,6 +32,14 @@ export default function Header() {
                             </li>
                             <li>
                                 <Link
+                                    href="/about"
+                                    className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
+                                >
+                                    About
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
                                     href="/services"
                                     className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
                                 >
@@ -64,10 +72,10 @@ export default function Header() {
                             </li>
                             <li>
                                 <Link
-                                    href="/contacts"
+                                    href="/contact"
                                     className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
                                 >
-                                    Contacts
+                                    Contact
                                 </Link>
                             </li>
                         </ul>

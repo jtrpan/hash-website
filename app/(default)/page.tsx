@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Hash Machinery Systems',
-  description: 'We provide high quality manufacturing services.',
+    title: 'Hash Machinery Systems',
+    description: 'We provide high quality manufacturing services.',
 }
 
 import Hero from '@/components/hero'
@@ -10,13 +10,13 @@ import Zigzag from '@/components/zigzag'
 import Testimonials from '@/components/testimonials'
 
 export default function Home() {
-  return (
-    <>
-      <Hero />
-      <Features />
-      <Zigzag />
-      <Testimonials />
-      <Newsletter />
-    </>
-  )
+    return (
+        <>
+            <Hero/>
+            <Features/>
+            <Zigzag/>
+            <Testimonials/>
+            <Newsletter/>
+        </>
+    )
 }

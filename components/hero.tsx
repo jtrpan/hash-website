@@ -43,19 +43,22 @@ export default function Hero() {
                             </div>
                             <div data-aos="fade-up" data-aos-delay="600">
                                 <a className="btn text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
-                                   href="#0">Learn more</a>
+                                   href="/about">Learn more</a>
                             </div>
                         </div>
                     </div>
 
-                    <ModalVideo
-                        thumb={VideoThumb}
-                        thumbWidth={1024}
-                        thumbHeight={576}
-                        thumbAlt="Modal video thumbnail"
-                        video="/videos/video.mp4"
-                        videoWidth={1920}
-                        videoHeight={1080}/>
+                    {/*<ModalVideo*/}
+                    {/*    thumb={VideoThumb}*/}
+                    {/*    thumbWidth={1024}*/}
+                    {/*    thumbHeight={576}*/}
+                    {/*    thumbAlt="Modal video thumbnail"*/}
+                    {/*    video="/videos/video.mp4"*/}
+                    {/*    videoWidth={1920}*/}
+                    {/*    videoHeight={1080}/>*/}
+                    <img src="/images/hero-image-01.jpg" alt="Thumbnail"
+                         style={{width: '1920', height: '1080', display: 'block', margin: '0 auto'}}/>
+
 
                 </div>
 

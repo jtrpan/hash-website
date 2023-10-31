@@ -20,3 +20,24 @@
 [x-cloak=""] {
     display: none;
 }
+
+.logo-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    overflow: visible;
+}
+
+.logo.small img {
+    width: 120px;
+}
+
+.logo.medium img {
+    width: 140px;
+}
+
+.logo.large img {
+    width: 160px;
+}

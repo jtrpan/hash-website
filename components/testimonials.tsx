@@ -1,5 +1,5 @@
 import Image from 'next/image'
-
+import {StaticImageData} from 'next/image';
 
 import TestimonialImage01 from '@/public/images/testimonial-01.jpg'
 import TestimonialImage02 from '@/public/images/testimonial-02.jpg'
@@ -26,6 +26,12 @@ import logo18 from '@/public/images/logos/logo18.png'
 import logo19 from '@/public/images/logos/logo19.png'
 import logo20 from '@/public/images/logos/logo20.png'
 
+type LogoType = {
+    src: StaticImageData;
+    alt: string;
+};
+
+
 const logos = [
     {src: logo01, alt: "Company Logo 1"},
     {src: logo02, alt: "Company Logo 2"},
@@ -39,9 +45,27 @@ const logos = [
     {src: logo10, alt: "Company Logo 10"},
     {src: logo11, alt: "Company Logo 11"},
     {src: logo12, alt: "Company Logo 12"},
+    {src: logo13, alt: "Company Logo 13"},
+    {src: logo14, alt: "Company Logo 14"},
+    {src: logo15, alt: "Company Logo 15"},
+    {src: logo16, alt: "Company Logo 16"},
+    {src: logo17, alt: "Company Logo 17"},
+    {src: logo18, alt: "Company Logo 18"},
 ];
 
+
+function shuffleArray(array: LogoType[]) {
+    let shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
+
+
 export default function LogoCloud() {
+    const shuffledLogos = shuffleArray(logos).slice(0, 12);
     return (
         <section>
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -56,9 +80,10 @@ export default function LogoCloud() {
                     </div>
 
                     {/* Logo Cluster */}
-                    <div className="logo-cloud">
-                        {logos.map((logo, index) => {
-                            const randomMargin = `${Math.random() * (5 - 1) + 1}rem`;
+                    <div className="logo-cloud" data-aos="fade-up">
+                        {shuffledLogos.map((logo, index) => {
+                            const randomHorizontalMargin = `${Math.round(Math.random()) + 2}rem`;
+                            const randomVerticalDisplacement = `${(Math.random() - 0.2)}rem`; // random value between -0.5 and 0.5
 
                             let size;
                             if (index % 5 === 0) {
@@ -74,7 +99,7 @@ export default function LogoCloud() {
                                     key={index}
                                     className={`logo ${size}`}
                                     style={{
-                                        margin: `${randomMargin} ${randomMargin}`,
+                                        margin: `${randomVerticalDisplacement} ${randomHorizontalMargin}`,
                                     }}
                                 >
                                     <Image src={logo.src} alt={logo.alt}/>

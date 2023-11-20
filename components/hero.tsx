@@ -5,7 +5,6 @@ export default function Hero() {
     return (
         <section>
             <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
-
                 {/* Illustration behind hero content */}
                 <div className="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none" aria-hidden="true"
                      data-aos="fade-up" data-aos-delay="400">
@@ -14,8 +13,8 @@ export default function Hero() {
                         <defs>
                             <linearGradient id="illustration-02" x1="-3.766" y1="300.204" x2="284.352" y2="577.921"
                                             gradientUnits="userSpaceOnUse">
-                                <stop stopColor="#5D5DFF" stopOpacity=".01"/>
-                                <stop offset="1" stopColor="#5D5DFF" stopOpacity=".32"/>
+                                <stop stopColor="#FD0203" stopOpacity=".01"/>
+                                <stop offset="1" stopColor="#FD0203" stopOpacity=".32"/>
                             </linearGradient>
                         </defs>
                         <path fillRule="evenodd" clipRule="evenodd"
@@ -38,7 +37,7 @@ export default function Hero() {
                             HMS can help.</p>
                         <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
                             <div data-aos="fade-up" data-aos-delay="400">
-                                <a className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0"
+                                <a className="btn text-white bg-red-500 hover:bg-red-700 w-full mb-4 sm:w-auto sm:mb-0"
                                    href="/contact">Get in touch</a>
                             </div>
                             <div data-aos="fade-up" data-aos-delay="600">
@@ -56,8 +55,9 @@ export default function Hero() {
                     {/*    video="/videos/video.mp4"*/}
                     {/*    videoWidth={1920}*/}
                     {/*    videoHeight={1080}/>*/}
-                    <img src="/images/hero-image-01.jpg" alt="Thumbnail"
-                         style={{width: '1920', height: '1080', display: 'block', margin: '0 auto'}}/>
+
+                    <img src="/images/background.jpg" alt="Thumbnail" data-aos="fade-up" data-aos-delay="800"
+                         style={{width: '1280', height: '720', display: 'block', margin: '0 auto'}}/>
 
 
                 </div>

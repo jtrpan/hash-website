@@ -1,53 +1,56 @@
 export const metadata = {
-    title: 'Reset Password - Open PRO',
+    title: 'Services',
     description: 'Page description',
 }
 
 import Link from 'next/link';
 import Head from 'next/head';
+import '../css/style.css'
 
 export default function Services() {
 
-    
 
     return (
         <section className="relative">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6">
+            <div className="max-w-6xl mx-auto px-2 sm:px-4">
                 <div className="pt-32 pb-12 md:pt-40 md:pb-20">
 
                     {/* Page header */}
                     <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                        <h1 className="h1 mb-4">Services</h1>
-                        <p className="text-xl text-gray-400">Our main business is to provide high quality manufacturing
-                            services, our 5 business units can offer you,
-                            Assemblying service
-                            Die casting manufacturing service
-                            Machining manufacturing service
-                            Injection mold, part production service
-                            Stamping part manufacturing service</p>
+                        <h1 className="h1 mb-4" data-aos="fade-up">Services</h1>
+                        <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Our company
+                            excels in manufacturing, ensuring clients receive unparalleled quality and efficiency. We've
+                            segmented our operations into five specialized units to address diverse manufacturing needs:
+                            assembly, die casting, precision machining, injection molding, and stamping. Each unit is
+                            committed to innovation and client satisfaction, establishing us as a trusted manufacturing
+                            partner.</p>
                     </div>
-
-                    <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-                        <div
-                            className="max-w-xs mx-auto sm:max-w-none sm:flex sm:flex-col sm:items-center space-y-4 sm:space-y-6">
-                            <div data-aos="fade-up" data-aos-delay="400">
-                                <a className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0"
-                                   href="services/diecasting">Die Casting Products</a>
+                    <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16" data-aos="fade-up"
+                         data-aos-delay="400">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-16">
+                            <div className="image-button">
+                                <img src="/images/image_buttons/die_casting.jpg" alt="Die Casting"/>
+                                <div className="overlay-text">
+                                    <a href="services/diecasting">Die Casting Services</a>
+                                </div>
                             </div>
-
-                            <div data-aos="fade-up" data-aos-delay="400">
-                                <a className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0"
-                                   href="services/machining">Machining Products</a>
+                            <div className="image-button">
+                                <img src="/images/image_buttons/machining.jpg" alt="Die Casting"/>
+                                <div className="overlay-text">
+                                    <a href="services/diecasting">Machining Services</a>
+                                </div>
                             </div>
-
-                            <div data-aos="fade-up" data-aos-delay="400">
-                                <a className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0"
-                                   href="services/molding">Plastic Molding Products</a>
+                            <div className="image-button">
+                                <img src="/images/image_buttons/plastic_mould.jpg" alt="Die Casting"/>
+                                <div className="overlay-text">
+                                    <a href="services/diecasting">Plastic Molding Services</a>
+                                </div>
                             </div>
-
-                            <div data-aos="fade-up" data-aos-delay="400">
-                                <a className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0"
-                                   href="services/stamping">Stamping Products</a>
+                            <div className="image-button">
+                                <img src="/images/image_buttons/stamping.jpg" alt="Die Casting"/>
+                                <div className="overlay-text">
+                                    <a href="services/diecasting">Stamping Services</a>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Reset Password - Open PRO',
+  title: 'Plastic Molding Products',
   description: 'Page description',
 }
 

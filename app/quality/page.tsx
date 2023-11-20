@@ -16,7 +16,7 @@ const qualityContent = {
         },
         {
             title: "Rigorous Quality Assurance",
-            content: `But we don't stop at the production line. Each product undergoes thorough testing, challenging them under various conditions to confirm their resilience and reliability. This meticulous quality assurance process signifies our full confidence in the products that bear our name, ensuring they not only meet the industry standards but redefine them.`
+            content: `But we don't stop at the production line. Each product undergoes thorough testing, challenging them under various conditions to confirm their resilience and reliability. This meticulous quality assurance process signifies our full confidence in the products that bear our name, ensuring they not only meet the industry standards but purpleefine them.`
         },
         {
             title: "Investment in Our People",
@@ -40,7 +40,7 @@ const qualityContent = {
 
 
 export const metadata = {
-    title: 'Quality Policy - Hash Machinery Systems',
+    title: 'Quality Policy',
     description: qualityContent.description,
 };
 
@@ -59,12 +59,12 @@ export default function Quality() {
 
                         {/* Header */}
                         <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                            <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Quality Assurance</h1>
-                            <p className="text-xl text-gray-400">{qualityContent.description}</p>
+                            <h1 className="text-4xl md:text-5xl font-extrabold mb-4" data-aos="fade-up">Quality Assurance</h1>
+                            <p className="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="200">{qualityContent.description}</p>
                         </div>
 
                         {/* Main Content */}
-                        <div className="max-w-3xl mx-auto space-y-8 text-left">
+                        <div className="max-w-3xl mx-auto space-y-8 text-left" data-aos="fade-up" data-aos-delay="400">
                             <Section
                                 title={qualityContent.commitmentSections[0].title}
                                 content={qualityContent.commitmentSections[0].content}

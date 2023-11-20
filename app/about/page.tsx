@@ -23,12 +23,12 @@ export default function About() {
 
                     {/* Page header */}
                     <header className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                        <h1 className="text-4xl md:text-5xl font-extrabold mb-4">About Us</h1>
-                        <p className="text-xl text-gray-400">{aboutContent.description}</p>
+                        <h1 className="text-4xl md:text-5xl font-extrabold mb-4" data-aos="fade-up">About Us</h1>
+                        <p className="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="200">{aboutContent.description}</p>
                     </header>
 
                     {/* Main content section with semantic HTML structure */}
-                    <div className="max-w-3xl mx-auto space-y-8 text-left">
+                    <div className="max-w-3xl mx-auto space-y-8 text-left" data-aos="fade-up" data-aos-delay="400">
                         <Section title="Our Story" content={aboutContent.story}/>
                         <Section title="What We Do" content={aboutContent.whatWeDo}/>
                         <Section title="Our Values" content={aboutContent.values}/>

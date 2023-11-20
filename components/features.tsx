@@ -29,10 +29,12 @@ export default function Features() {
                             {/*    <path className="stroke-current text-purple-300" d="M43 42h-9M43 37h-9"*/}
                             {/*          strokeLinecap="square" strokeWidth="2"/>*/}
                             {/*</svg>*/}
-                            <img className="w-16 h-16 mb-4" src="/images/assembly_services.png"
-                                 alt="Assembly Services Icon"/>
+                            <div className="bg-red-600 w-20 h-20 rounded-full flex items-center justify-center mb-4">
+                                <img className="w-12 h-12" src="/images/icons/assembly.png"
+                                     alt="Assembly Services Icon"/>
+                            </div>
                             <h4 className="h4 mb-2">Assembly Services</h4>
-                            <p className="text-lg text-gray-400 text-center">Expert assembly services tailored to your
+                            <p className="text-lg text-gray-400 text-center">Expert assembly services tailopurple to your
                                 needs. Combining precision, efficiency, and reliability to deliver top-tier finished
                                 products every time.</p>
                         </div>
@@ -47,8 +49,10 @@ export default function Features() {
                             {/*    <path className="stroke-current text-purple-300" d="M26 28h12M26 32h12M26 36h5"*/}
                             {/*          strokeWidth="2" strokeLinecap="square"/>*/}
                             {/*</svg>*/}
-                            <img className="w-16 h-16 mb-4" src="/images/assembly_services.png"
-                                 alt="Die Casting Icon"/>
+                            <div className="bg-red-600 w-20 h-20 rounded-full flex items-center justify-center mb-4">
+                                <img className="w-12 h-12" src="/images/icons/die_casting.png"
+                                     alt="Die Casting Icon"/>
+                            </div>
                             <h4 className="h4 mb-2">Die Casting Manufacturing</h4>
                             <p className="text-lg text-gray-400 text-center">Specialized in die casting manufacturing,
                                 we transform molten metal into precision parts. Achieve superior quality and intricate
@@ -68,8 +72,11 @@ export default function Features() {
                             {/*        <circle className="stroke-current text-purple-100" cx="11" cy="11" r="11"/>*/}
                             {/*    </g>*/}
                             {/*</svg>*/}
-                            <img className="w-16 h-16 mb-4" src="/images/assembly_services.png"
-                                 alt="Machining Icon"/>
+
+                            <div className="bg-red-600 w-20 h-20 rounded-full flex items-center justify-center mb-4">
+                                <img className="w-12 h-12" src="/images/icons/machining.png"
+                                     alt="Machining Icon"/>
+                            </div>
                             <h4 className="h4 mb-2">Machining Manufacturing</h4>
                             <p className="text-lg text-gray-400 text-center">Mastering machining manufacturing, we craft
                                 precision components with utmost accuracy. Experience top-tier quality and detailed
@@ -88,8 +95,10 @@ export default function Features() {
                             {/*        <circle className="stroke-current text-purple-300" cx="13" cy="9" r="3"/>*/}
                             {/*    </g>*/}
                             {/*</svg>*/}
-                            <img className="w-16 h-16 mb-4" src="/images/assembly_services.png"
-                                 alt="Injection Molding Icon"/>
+                            <div className="bg-red-600 w-20 h-20 rounded-full flex items-center justify-center mb-4">
+                                <img className="w-12 h-12" src="/images/icons/injection_mold.png"
+                                     alt="Injection Molding Icon"/>
+                            </div>
                             <h4 className="h4 mb-2">Injection Molding</h4>
                             <p className="text-lg text-gray-400 text-center">Transforming designs into tangible
                                 products, our injection molding delivers precision and efficiency in every mold.</p>
@@ -106,8 +115,10 @@ export default function Features() {
                             {/*        <path className="stroke-current text-purple-300" d="M22 30h4v12h-4z"/>*/}
                             {/*    </g>*/}
                             {/*</svg>*/}
-                            <img className="w-16 h-16 mb-4" src="/images/assembly_services.png"
-                                 alt="Production Icon"/>
+                            <div className="bg-red-600 w-20 h-20 rounded-full flex items-center justify-center mb-4">
+                                <img className="w-12 h-12" src="/images/icons/production.png"
+                                     alt="Parts Production Icon"/>
+                            </div>
                             <h4 className="h4 mb-2">Parts Production</h4>
                             <p className="text-lg text-gray-400 text-center">Ensuring consistency and quality, our parts
                                 production services cater to diverse industries with unmatched expertise.</p>
@@ -127,8 +138,10 @@ export default function Features() {
                             {/*              d="M8.86 1.18C3.8 1.988 0 5.6 0 10c0 5 4.9 9 11 9a10.55 10.55 0 003.1-.4L20 21l-.6-5.2a9.125 9.125 0 001.991-2.948"/>*/}
                             {/*    </g>*/}
                             {/*</svg>*/}
-                            <img className="w-16 h-16 mb-4" src="/images/assembly_services.png"
-                                 alt="Stamping Icon"/>
+                            <div className="bg-red-600 w-20 h-20 rounded-full flex items-center justify-center mb-4">
+                                <img className="w-12 h-12" src="/images/icons/stamping.png"
+                                     alt="Stamping Icon"/>
+                            </div>
                             <h4 className="h4 mb-2">Stamping Parts</h4>
                             <p className="text-lg text-gray-400 text-center">Crafting with precision, our stamping
                                 processes shape metals to exact specifications, guaranteeing durability and fit.</p>

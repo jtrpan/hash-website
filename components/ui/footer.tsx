@@ -22,8 +22,9 @@ export default function Footer() {
                                     </svg>
                                 </Link>
                             </div>
-                            <div className="text-gray-400">Lorem ipsum is placeholder text commonly used in the graphic,
-                                print, and publishing industries for previewing layouts and visual mockups.
+                            <div className="text-gray-400">Hash Machinery Systems is dedicated to pioneering advanced
+                                manufacturing solutions, serving industries globally with unparalleled quality and
+                                precision.
                             </div>
                         </div>
 
@@ -32,54 +33,54 @@ export default function Footer() {
 
                             {/* 2nd block */}
                             <div className="text-sm">
-                                <h6 className="text-gray-200 font-medium mb-1">Products</h6>
+                                <h6 className="text-gray-200 font-medium mb-1">Services</h6>
                                 <ul>
                                     <li className="mb-1">
-                                        <Link href="/"
-                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Web
-                                            Studio</Link>
+                                        <Link href="/services/diecasting"
+                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Die
+                                            Casting Services</Link>
                                     </li>
                                     <li className="mb-1">
-                                        <Link href="/"
-                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">DynamicBox
-                                            Flex</Link>
+                                        <Link href="/services/machining"
+                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Machining
+                                            Services</Link>
                                     </li>
                                     <li className="mb-1">
-                                        <Link href="/"
-                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Programming
-                                            Forms</Link>
+                                        <Link href="/services/plastic_molding"
+                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Plastic
+                                            Molding Services</Link>
+                                    </li>
+                                    <li className="mb-1">
+                                        <Link href="/services/stamping"
+                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Stamping
+                                            Services</Link>
                                     </li>
                                 </ul>
                             </div>
 
                             {/* 3rd block */}
                             <div className="text-sm">
-                                <h6 className="text-gray-200 font-medium mb-1">Resources</h6>
+                                <h6 className="text-gray-200 font-medium mb-1">Products</h6>
                                 <ul>
                                     <li className="mb-1">
-                                        <Link href="/"
-                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Nostrud
-                                            exercitation</Link>
+                                        <Link href="/products/diecasting"
+                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Die
+                                            Casting Products</Link>
                                     </li>
                                     <li className="mb-1">
-                                        <Link href="/"
-                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Visual
-                                            mockups</Link>
+                                        <Link href="/products/machining"
+                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Machining
+                                            Products</Link>
                                     </li>
                                     <li className="mb-1">
-                                        <Link href="/"
-                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Nostrud
-                                            exercitation</Link>
+                                        <Link href="/products/plastic_molding"
+                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Plastic
+                                            Molding Products</Link>
                                     </li>
                                     <li className="mb-1">
-                                        <Link href="/"
-                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Visual
-                                            mockups</Link>
-                                    </li>
-                                    <li className="mb-1">
-                                        <Link href="/"
-                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Nostrud
-                                            exercitation</Link>
+                                        <Link href="/products/stamping"
+                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Stamping
+                                            Products</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -89,29 +90,22 @@ export default function Footer() {
                                 <h6 className="text-gray-200 font-medium mb-1">Company</h6>
                                 <ul>
                                     <li className="mb-1">
-                                        <Link href="/"
-                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Consectetur
-                                            adipiscing</Link>
+                                        <Link href="/about"
+                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">About
+                                            Us</Link>
                                     </li>
                                     <li className="mb-1">
-                                        <Link href="/"
-                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Labore
-                                            et dolore</Link>
+                                        <Link href="/quality"
+                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Quality
+                                            Assurance</Link>
                                     </li>
                                     <li className="mb-1">
-                                        <Link href="/"
-                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Consectetur
-                                            adipiscing</Link>
+                                        <Link href="/clients"
+                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Clients</Link>
                                     </li>
                                     <li className="mb-1">
-                                        <Link href="/"
-                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Labore
-                                            et dolore</Link>
-                                    </li>
-                                    <li className="mb-1">
-                                        <Link href="/"
-                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Consectetur
-                                            adipiscing</Link>
+                                        <Link href="/contact"
+                                              className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Contact</Link>
                                     </li>
                                 </ul>
                             </div>

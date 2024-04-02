@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
-import FeatImage01 from '@/public/images/features-03-image-01.png'
-import FeatImage02 from '@/public/images/features-03-image-02.png'
+import FeatImage01 from '@/public/images/featured_img01.jpg'
+import FeatImage02 from '@/public/images/featured_img02.jpg'
 import FeatImage03 from '@/public/images/features-03-image-03.png'
 
 export default function Zigzag() {
@@ -39,12 +39,12 @@ export default function Zigzag() {
                             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6"
                                  data-aos="fade-right">
                                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                                    <div className="font-architects-daughter text-xl text-red-600 mb-2">[placeholder]
+                                    <div className="font-architects-daughter text-xl text-red-600 mb-2">Innovation
                                     </div>
-                                    <h3 className="h3 mb-3">[placeholder]</h3>
-                                    <p className="text-xl text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                        aliqua.</p>
+                                    <h3 className="h3 mb-3">Engineering Solutions</h3>
+                                    <p className="text-xl text-gray-400 mb-4">Our team is equipped with cutting-edge
+                                        technology and the expertise to solve complex engineering challenges, ensuring
+                                        that every solution is not only effective but also innovative.</p>
                                     <ul className="text-lg text-gray-400 -mb-2">
                                         <li className="flex items-center mb-2">
                                             <svg className="w-3 h-3 fill-current text-red-500 mr-2 shrink-0"
@@ -52,7 +52,7 @@ export default function Zigzag() {
                                                 <path
                                                     d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"/>
                                             </svg>
-                                            <span>Duis aute irure dolor in reprehenderit</span>
+                                            <span>Tailored Engineering Consultation</span>
                                         </li>
                                         <li className="flex items-center mb-2">
                                             <svg className="w-3 h-3 fill-current text-red-500 mr-2 shrink-0"
@@ -60,7 +60,7 @@ export default function Zigzag() {
                                                 <path
                                                     d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"/>
                                             </svg>
-                                            <span>Excepteur sint occaecat</span>
+                                            <span>State-of-the-Art Manufacturing Techniques</span>
                                         </li>
                                         <li className="flex items-center">
                                             <svg className="w-3 h-3 fill-current text-red-500 mr-2 shrink-0"
@@ -68,7 +68,7 @@ export default function Zigzag() {
                                                 <path
                                                     d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"/>
                                             </svg>
-                                            <span>Amet consectetur adipiscing elit</span>
+                                            <span>Sustainable Practices</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -88,12 +88,13 @@ export default function Zigzag() {
                             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6"
                                  data-aos="fade-left">
                                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                                    <div className="font-architects-daughter text-xl text-red-600 mb-2">[placeholder]
+                                    <div className="font-architects-daughter text-xl text-red-600 mb-2">Excellence
                                     </div>
-                                    <h3 className="h3 mb-3">[placeholder]</h3>
-                                    <p className="text-xl text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                        aliqua.</p>
+                                    <h3 className="h3 mb-3">Global Supply Chain</h3>
+                                    <p className="text-xl text-gray-400 mb-4">Leverage our global network for your
+                                        manufacturing needs. We offer unparalleled access to a vast supply chain,
+                                        ensuring the
+                                        efficient delivery of high-quality components.</p>
                                     <ul className="text-lg text-gray-400 -mb-2">
                                         <li className="flex items-center mb-2">
                                             <svg className="w-3 h-3 fill-current text-red-500 mr-2 shrink-0"
@@ -101,7 +102,7 @@ export default function Zigzag() {
                                                 <path
                                                     d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"/>
                                             </svg>
-                                            <span>Duis aute irure dolor in reprehenderit</span>
+                                            <span>Streamlined Logistics</span>
                                         </li>
                                         <li className="flex items-center mb-2">
                                             <svg className="w-3 h-3 fill-current text-red-500 mr-2 shrink-0"
@@ -109,7 +110,7 @@ export default function Zigzag() {
                                                 <path
                                                     d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"/>
                                             </svg>
-                                            <span>Excepteur sint occaecat</span>
+                                            <span>Quality Control</span>
                                         </li>
                                         <li className="flex items-center">
                                             <svg className="w-3 h-3 fill-current text-red-500 mr-2 shrink-0"
@@ -117,7 +118,7 @@ export default function Zigzag() {
                                                 <path
                                                     d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"/>
                                             </svg>
-                                            <span>Amet consectetur adipiscing elit</span>
+                                            <span>Customs and Compliance</span>
                                         </li>
                                     </ul>
                                 </div>

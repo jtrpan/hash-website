@@ -1,4 +1,7 @@
+'use client'
+
 import React, {useState} from 'react';
+import emailjs from 'emailjs-com';
 
 
 const ContactForm = () => {
@@ -7,32 +10,19 @@ const ContactForm = () => {
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
-        const formData = new FormData(event.currentTarget);
-        const data = {
-            name: formData.get('name'),
-            email: formData.get('email'),
-            message: formData.get('message'),
-        };
-
-        try {
-            const response = await fetch('/api/sendEmail', {
-                // ... fetch configuration
-            });
-
-            const result = await response.json();
-
-            if (response.ok) {
+        const form = event.currentTarget;
+        emailjs.sendForm('service_s6ovfvk', 'template_1lxhhk8', form, 'OiWR6TedbTSJsj5Ci')
+            .then((result) => {
+                console.log(result.text);
                 setIsSubmitted(true);
                 setSubmitMessage('Your message has been sent successfully!');
-                // Optionally reset form fields here
-            } else {
+                // Optionally clear the form here
+                form.reset();
+            }, (error) => {
+                console.log(error.text);
                 setIsSubmitted(false);
                 setSubmitMessage('Failed to send the message. Please try again.');
-            }
-        } catch (error) {
-            setIsSubmitted(false);
-            setSubmitMessage('An error occurred. Please try again.');
-        }
+            });
     };
 
     return (
@@ -42,17 +32,17 @@ const ContactForm = () => {
 
                 <div className="flex flex-wrap -mx-2">
                     <div className="w-full md:w-1/2 px-2 mb-4 md:mb-0">
-                        <label htmlFor="name"
+                        <label htmlFor="from_name"
                                className="block text-sm font-medium text-gray-200 mb-2">Name</label>
-                        <input type="text" id="name" name="name"
+                        <input type="text" id="from_name" name="from_name"
                                className="w-full p-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 font-medium text-gray-700"
                                required/>
                     </div>
 
                     <div className="w-full md:w-1/2 px-2">
-                        <label htmlFor="email"
+                        <label htmlFor="from_addr"
                                className="block text-sm font-medium text-gray-200 mb-2">Email</label>
-                        <input type="email" id="email" name="email"
+                        <input type="email" id="from_addr" name="from_addr"
                                className="w-full p-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 font-medium text-gray-700"
                                required/>
                     </div>

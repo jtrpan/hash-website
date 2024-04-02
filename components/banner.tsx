@@ -1,6 +1,7 @@
 'use client'
 
 import {useState} from 'react'
+import Link from "next/link";
 
 export default function Banner() {
     const [bannerOpen, setBannerOpen] = useState<boolean>(true)
@@ -15,11 +16,10 @@ export default function Banner() {
                   className="font-medium text-slate-50">
                 Got questions?&nbsp;
               </span>
-                            <a className="font-medium hover:underline text-emerald-400" href="/contact"
-                               target="_blank"
-                               rel="noreferrer">
+                            <Link className="font-medium hover:underline text-emerald-400" href="/contact"
+                                  rel="noreferrer">
                                 Contact us.
-                            </a>
+                            </Link>
                         </div>
                         <button className="text-slate-500 hover:text-slate-400 pl-2 ml-3 border-l border-gray-700"
                                 onClick={() => setBannerOpen(false)}>

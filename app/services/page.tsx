@@ -1,6 +1,6 @@
 export const metadata = {
     title: 'Services',
-    description: 'Page description',
+    description: 'Services page.',
 }
 
 import Link from 'next/link';
@@ -31,25 +31,25 @@ export default function Services() {
                             <div className="image-button">
                                 <img src="/images/image_buttons/die_casting.jpg" alt="Die Casting"/>
                                 <div className="overlay-text">
-                                    <a href="services/diecasting">Die Casting Services</a>
+                                    <Link href="services/diecasting">Die Casting Services</Link>
                                 </div>
                             </div>
                             <div className="image-button">
                                 <img src="/images/image_buttons/machining.jpg" alt="Die Casting"/>
                                 <div className="overlay-text">
-                                    <a href="services/diecasting">Machining Services</a>
+                                    <Link href="services/machining">Machining Services</Link>
                                 </div>
                             </div>
                             <div className="image-button">
-                                <img src="/images/image_buttons/plastic_mould.jpg" alt="Die Casting"/>
+                                <img src="/images/image_buttons/plastic_mold.jpg" alt="Die Casting"/>
                                 <div className="overlay-text">
-                                    <a href="services/diecasting">Plastic Molding Services</a>
+                                    <Link href="services/plastic_molding">Plastic Molding Services</Link>
                                 </div>
                             </div>
                             <div className="image-button">
                                 <img src="/images/image_buttons/stamping.jpg" alt="Die Casting"/>
                                 <div className="overlay-text">
-                                    <a href="services/diecasting">Stamping Services</a>
+                                    <Link href="services/stamping">Stamping Services</Link>
                                 </div>
                             </div>
                         </div>

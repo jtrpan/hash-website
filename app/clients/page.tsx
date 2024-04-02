@@ -1,6 +1,6 @@
 export const metadata = {
     title: 'Clients',
-    description: 'Page description',
+    description: 'Clients page.',
 }
 
 import Link from 'next/link';

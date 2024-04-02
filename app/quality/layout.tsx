@@ -1,6 +1,7 @@
 import PageIllustration from '@/components/page-illustration'
+import Footer from "@/components/ui/footer";
 
-export default function AuthLayout({
+export default function QualityLayout({
   children,
 }: {
   children: React.ReactNode
@@ -11,6 +12,8 @@ export default function AuthLayout({
       <PageIllustration />
 
       {children}
+
+      <Footer />
 
     </main>
   )

@@ -50,7 +50,7 @@ export default function Contact() {
                         </p>
                     </div>
 
-                    <div className="max-w-3xl mx-auto pb-12 md:pb-16">x
+                    <div className="max-w-3xl mx-auto pb-12 md:pb-16">
                         <div className="max-w-4xl mx-auto">
                             {/* Contact Form */}
                             <div data-aos="fade-up" data-aos-delay="400">

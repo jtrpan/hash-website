@@ -6,7 +6,7 @@ export default function Features() {
 
                     {/* Section header */}
                     <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                        <h2 className="h2 mb-4">Primary Services</h2>
+                        <h2 className="h2 mb-4">Services</h2>
                         <p className="text-xl text-gray-400">We excel in diverse manufacturing services tailored for
                             industry leaders. From expert assembly to precision parts production, each process ensures
                             unparalleled quality and efficiency. Dive in and explore our comprehensive core offerings to

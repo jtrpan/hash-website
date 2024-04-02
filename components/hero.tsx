@@ -1,5 +1,6 @@
 import VideoThumb from '@/public/images/hero-image-01.jpg'
 import ModalVideo from '@/components/modal-video'
+import Link from "next/link";
 
 export default function Hero() {
     return (
@@ -31,18 +32,19 @@ export default function Hero() {
                         <h1 className="h1 mb-4" data-aos="fade-up">Hash Machinery Systems</h1>
                         <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Hash Machinery
                             Systems (HMS) is a quality contract manufacturer and importer of cast products, stampings,
-                            machining, plastic injection moulding, etc. We believe that quality, service and pricing are
+                            machining, plastic injection molding, etc. We believe that quality, service and pricing are
                             equally important to ensure the long-term success of your overseas purchasing program.
                             Whether you are currently purchasing overseas or you would like to find a reliable source,
                             HMS can help.</p>
                         <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
                             <div data-aos="fade-up" data-aos-delay="400">
-                                <a className="btn text-white bg-red-500 hover:bg-red-700 w-full mb-4 sm:w-auto sm:mb-0"
-                                   href="/contact">Get in touch</a>
+                                <Link
+                                    className="btn text-white bg-red-500 hover:bg-red-700 w-full mb-4 sm:w-auto sm:mb-0"
+                                    href="/contact">Get in touch</Link>
                             </div>
                             <div data-aos="fade-up" data-aos-delay="600">
-                                <a className="btn text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
-                                   href="/about">Learn more</a>
+                                <Link className="btn text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
+                                      href="/about">Learn more</Link>
                             </div>
                         </div>
                     </div>

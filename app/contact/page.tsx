@@ -64,8 +64,7 @@ export default function Contact() {
                     <div className="max-w-3xl mx-auto text-left pb-12 md:pb-20">
                         <h4 className="h4 mb-4" data-aos="fade-up" data-aos-delay="600">Other Ways to Reach Us</h4>
                         <ul className="contact-details" data-aos="fade-up" data-aos-delay="800">
-                            <li><strong>Address:</strong> 343 Preston Street, 11th Floor, Ottawa, K1S 1N4,
-                                Canada
+                            <li><strong>Address:</strong> Suite 500, 7030 Woodbine Ave, Markham, ON, L3R 6G2, Canada
                             </li>
                             <li><strong>Email:</strong> info@hashmachinery.com</li>
                             <li><strong>Phone:</strong> +1 (613) 884-3388</li>

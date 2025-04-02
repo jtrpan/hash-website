@@ -16,7 +16,7 @@ export default function Banner() {
                   className="font-medium text-slate-50">
                 Got questions?&nbsp;
               </span>
-                            <Link className="font-medium hover:underline text-emerald-400" href="/contact"
+                            <Link className="font-medium hover:underline text-red-600" href="/contact"
                                   rel="noreferrer">
                                 Contact us.
                             </Link>

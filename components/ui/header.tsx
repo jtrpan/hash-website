@@ -10,7 +10,7 @@ export default function Header() {
                     <div className="shrink-0 mr-4">
                         {/* Logo */}
                         <Link href="/" className="block" aria-label="">
-                            <img src="/images/hash.jpg" alt="Logo"/>
+                            <img src="/images/hash.jpg" alt="Logo" className="h-10 w-auto"/>
                             {/*<svg className="w-8 h-8 fill-current text-red-600" viewBox="0 0 32 32"*/}
                             {/*     xmlns="http://www.w3.org/2000/svg">*/}
                             {/*    <path*/}

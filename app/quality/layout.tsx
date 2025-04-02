@@ -5,7 +5,7 @@ export default function QualityLayout({
   children,
 }: {
   children: React.ReactNode
-}) {  
+}) {
   return (
     <main className="grow">
 

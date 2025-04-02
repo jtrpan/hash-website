@@ -1,10 +1,6 @@
 import Image from 'next/image'
 import {StaticImageData} from 'next/image';
 
-import TestimonialImage01 from '@/public/images/testimonial-01.jpg'
-import TestimonialImage02 from '@/public/images/testimonial-02.jpg'
-import TestimonialImage03 from '@/public/images/testimonial-03.jpg'
-
 import logo01 from '@/public/images/logos/logo01.png'
 import logo02 from '@/public/images/logos/logo02.png'
 import logo03 from '@/public/images/logos/logo03.png'
@@ -191,4 +187,3 @@ export default function LogoCloud() {
         </section>
     )
 }
-

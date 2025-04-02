@@ -59,8 +59,9 @@ export default function Newsletter() {
                             </div>
                             {/* Success message */}
                             {isSubmitted && (
-                                <p className="text-center lg:text-left lg:absolute mt-2 text-red-100 text-sm">Thanks for
-                                    subscribing!</p>
+                                <p className="text-center lg:text-left lg:absolute mt-2 text-red-100 text-sm">
+                                    Thanks for subscribing!
+                                </p>
                             )}
                         </form>
 

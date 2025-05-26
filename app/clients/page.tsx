@@ -28,33 +28,47 @@ import logo17 from '@/public/images/logos/logo17.png'
 import logo18 from '@/public/images/logos/logo18.png'
 import logo19 from '@/public/images/logos/logo19.png'
 import logo20 from '@/public/images/logos/logo20.png'
+import logo21 from '@/public/images/logos/logo21.png'
 
 type LogoType = {
     src: StaticImageData;
     alt: string;
 };
 
+const fLogos = [
+    {src: logo07, alt: "Tesla, Inc."},
+    {src: logo02, alt: "Sensata Technologies"},
+    {src: logo12, alt: "General Electric"},
+    {src: logo21, alt: "Volvo Cars"},
+];
 
 const logos = [
     {src: logo01, alt: "Company Logo 1"},
-    {src: logo02, alt: "Company Logo 2"},
+    // {src: logo02, alt: "Company Logo 2"},
     {src: logo03, alt: "Company Logo 3"},
     {src: logo04, alt: "Company Logo 4"},
     {src: logo05, alt: "Company Logo 5"},
     {src: logo06, alt: "Company Logo 6"},
-    {src: logo07, alt: "Company Logo 7"},
+    // {src: logo07, alt: "Company Logo 7"},
     {src: logo08, alt: "Company Logo 8"},
     {src: logo09, alt: "Company Logo 9"},
     {src: logo10, alt: "Company Logo 10"},
     {src: logo11, alt: "Company Logo 11"},
-    {src: logo12, alt: "Company Logo 12"},
+    // {src: logo12, alt: "Company Logo 12"},
     {src: logo13, alt: "Company Logo 13"},
     {src: logo14, alt: "Company Logo 14"},
     {src: logo15, alt: "Company Logo 15"},
     {src: logo16, alt: "Company Logo 16"},
     {src: logo17, alt: "Company Logo 17"},
     {src: logo18, alt: "Company Logo 18"},
+    // {src: logo19, alt: "Company Logo 19"},
+    // {src: logo20, alt: "Company Logo 20"},
+    // {src: logo21, alt: "Company Logo 21"},
 ];
+
+// Filter out any featured logo srcs
+const logoSet = new Set(fLogos.map(logo => logo.src));
+const shuffledLogos = shuffleArray(logos.filter(logo => !logoSet.has(logo.src))).slice(0, 12); // Adjust count if needed
 
 
 function shuffleArray(array: LogoType[]) {
@@ -68,7 +82,7 @@ function shuffleArray(array: LogoType[]) {
 
 
 export default function Clients() {
-    const shuffledLogos = shuffleArray(logos).slice(0, 16);
+    // const shuffledLogos = shuffleArray(logos).slice(0, 16);
     return (
         <section className="relative">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -81,33 +95,33 @@ export default function Clients() {
                             for yourself the esteemed brands that trust in Hash Machinery Systems.</p>
                     </div>
                     {/* Logo Cluster */}
-                    <div className="logo-cloud" data-aos="fade-up" data-aos-delay="400">
-                        {shuffledLogos.map((logo, index) => {
-                            const randomHorizontalMargin = `${Math.round(Math.random()) + 2}rem`;
-                            const randomVerticalDisplacement = `${(Math.random() - 0.2)}rem`; // random value between -0.5 and 0.5
-
-                            let size;
-                            if (index % 5 === 0) {
-                                size = "large";
-                            } else if (index % 3 === 0) {
-                                size = "medium";
-                            } else {
-                                size = "small";
-                            }
-
-                            return (
-                                <div
-                                    key={index}
-                                    className={`logo ${size}`}
-                                    style={{
-                                        margin: `${randomVerticalDisplacement} ${randomHorizontalMargin}`,
-                                    }}
-                                >
-                                    <Image src={logo.src} alt={logo.alt}/>
-                                </div>
-                            );
-                        })}
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 items-center justify-center">
+                        {fLogos.map((logo, index) => (
+                            <div
+                                key={`featured-${index}`}
+                                className="logo large flex justify-center items-center"
+                            >
+                                <Image src={logo.src} alt={logo.alt} />
+                            </div>
+                        ))}
                     </div>
+
+                    {/* Shuffled Logos */}
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-10">
+                        {shuffledLogos.map((logo, index) => (
+                            <div
+                                key={`shuffled-${index}`}
+                                className="flex justify-center items-center p-4"
+                            >
+                                <Image
+                                    src={logo.src}
+                                    alt={logo.alt}
+                                    className="h-auto w-auto max-h-24 max-w-full object-contain"
+                                />
+                            </div>
+                        ))}
+                    </div>
+
                 </div>
             </div>
         </section>

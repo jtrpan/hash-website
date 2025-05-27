@@ -40,7 +40,7 @@ export default function Features() {
                         </div>
 
                         {/* 2nd item */}
-                        <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="500"
+                        <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="150"
                              data-aos-anchor="[data-aos-id-blocks]">
                             {/*<svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">*/}
                             {/*    <rect className="fill-current text-purple-600" width="64" height="64" rx="32"/>*/}
@@ -63,7 +63,7 @@ export default function Features() {
                         </div>
 
                         {/* 3rd item */}
-                        <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="200"
+                        <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="300"
                              data-aos-anchor="[data-aos-id-blocks]">
                             {/*<svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">*/}
                             {/*    <rect className="fill-current text-purple-600" width="64" height="64" rx="32"/>*/}
@@ -87,7 +87,7 @@ export default function Features() {
                         </div>
 
                         {/* 4th item */}
-                        <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="300"
+                        <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="450"
                              data-aos-anchor="[data-aos-id-blocks]">
                             {/*<svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">*/}
                             {/*    <rect className="fill-current text-purple-600" width="64" height="64" rx="32"/>*/}
@@ -108,7 +108,7 @@ export default function Features() {
                         </div>
 
                         {/* 5th item */}
-                        <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="100"
+                        <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="600"
                              data-aos-anchor="[data-aos-id-blocks]">
                             {/*<svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">*/}
                             {/*    <circle className="fill-current text-purple-600" cx="32" cy="32" r="32"/>*/}
@@ -128,7 +128,7 @@ export default function Features() {
                         </div>
 
                         {/* 6th item */}
-                        <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="400"
+                        <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="750"
                              data-aos-anchor="[data-aos-id-blocks]">
                             {/*<svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">*/}
                             {/*    <rect className="fill-current text-purple-600" width="64" height="64" rx="32"/>*/}
